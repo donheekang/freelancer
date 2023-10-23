@@ -30,8 +30,9 @@
     <!-- 정보 제출 폼 -->
     <section>
         <h2>소개 정보 제출</h2>
-        <!-- 이슈 템플릿 URL로 변경해 주세요 -->
-        <form action="https://github.com/donheekang/freelancer/issues/new?template=your_issue_template_name_here.md" method="post" id="introForm">
+        <!-- Netlify 폼 설정 -->
+        <form name="contact" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="contact">
             <div>
                 <label for="introducerName">소개하는 사람 이름:</label>
                 <input type="text" id="introducerName" name="introducerName">
